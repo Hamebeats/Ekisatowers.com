@@ -1,0 +1,63 @@
+* {
+    background-color: fuchsia;
+    display: block;
+    ;
+}
+img {
+    width: 555px;
+    height: 350px;
+    border-style: 1px solid;
+    border-color: gray;
+    border-radius: 5px;
+}
+a {
+    color: black;
+}
+h1 {
+    text-align: center;
+}
+.quito {
+    position: relative;
+    top: 200px;
+    left: 300px;
+}
+input {
+    background-color: lightgoldenrodyellow;
+}
+.thanks {
+    color: royalblue;
+}
+h3{
+    text-align: center;
+}
+marquee {
+    background-color: pink;
+    border-style: 1px solid white;
+    border-radius: 5px;
+}
+form, label, .para {
+    background-color: greenyellow;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+.submit {
+    position: relative;
+    left: 250px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+h4 {
+    position: sticky;
+    top: 40;
+}
+.madness {
+    text-transform: uppercase;
+    display: inline;
+}
+a:hover {
+    background-color: pink;
+    color:cornflowerblue;
+    font-size:20px;
+}

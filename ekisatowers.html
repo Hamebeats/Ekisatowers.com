@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Ekisa towers
+    </title>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    </head>
+    <header>
+      <h1 id="logo">
+          Ekisa towers
+      </h1>
+      </header>
+    <body>
+        <div>
+            <h3>
+                A home far away from home.
+            </h3>
+              <img class="quito" src="Mad drawing" alt="Madness">
+        </div>
+    <div>
+        <h4>
+            We are a world class hotel found in 1990 by investors from all over the world located in Entebbe 
+            near the lake Victoria. We move with theme, "perfection first". We have very good and pleasant facilities
+            not to mention the treatent provided by our staff. We also believe in satisfaction of our clients needs 
+            coz we exist coz of them.
+        </h4>
+        <p id="services">
+            We offer well prepared, breathtaking services to fulfil your desires some of which include;
+        </p>
+        <ul>
+            <li>
+                Luxurious apartments
+            </li>
+            <li>
+                A delaxe restaurant
+            </li>
+            <li>
+                A swimming pool with kids section
+            </li>
+            <li>
+                A parking area with enough space.
+            </li>
+            <li>
+                Gardens for picnics, meetings and all kinds of ceremonies.
+            </li>
+        </ul>
+    <p>
+        Ok now let us talk about our facilities.
+    </p>
+    <p>
+       So we have apartments to suite your pocket where we have; 
+    </p>
+    <h4>
+        Three bedrooms
+    </h4>
+    <figcaption>
+        These are the three bedrooms apartments and they are available
+         with two toilets, a living room and two balconies.
+    </figcaption>
+    <img src="Onebd.jpg" alt="One bedroom">
+    </div>
+    <div>
+    <p>
+        The gardens and parking are very spacious and very clean.
+    </p>
+    <p>
+        The swimming pool is very big with 24/7 standby life guards always ready to attend to the swimmers as well
+        teach people how to swim.
+    </p>
+    <img src="Swimming pool.jpg" alt="swimming pool">
+    <h3 id="Reservations">
+        RESERVATIONS
+    </h3>
+    </div>
+    <div>
+        <form  name = "submit-to-google-sheet">
+            <label for="name">Name</label>
+            <br>
+            <input id="name" type="text" name = 'name' required>
+            <br>
+            <label for="contact" >
+                Contact
+            </label>
+            <br>
+            <input id="contact" type="number" name = 'contact' minlength="10" required>  
+            <br>
+            <label for="email">
+                Email address
+            </label>    
+            <br>
+            <input id="email" name="emailaddress" type="email" required>
+            <br>
+            <label for="password">
+                Password
+            </label>
+            <br>
+            <input id="password" name="password" type="password">
+            <br>
+            <p class="para">
+                Types of bedrooms
+            </p>
+            <input id="bedroom" name="bedroom" type="radio">
+            <label for="bedroom">
+                One bedrooms
+            </label>
+            <br>
+            <input id="two bedrooms" name="bedroom" type="radio">
+            <label for="two bedrooms">
+                Two bedrooms
+            </label>
+            <br>
+            <input id="three bedrooms" name="bedroom" type="radio">
+            <label for="three bedrooms">
+                Three bedrooms
+            </label>
+            <br>
+            <br>
+            <label for="number of rooms">
+                Number of  rooms.
+            </label> 
+            <br>
+            <input id="number of rooms" name="numberofrooms" type="number" required>
+            <br>
+            <label for="payments">
+                Payments
+            </label>
+            <br>
+            <input list="payment" id="payments" name="payment" required>
+            <datalist id="payment">
+                <option value="One bedroom for 300$">
+                    One bedroom for 300$.
+                </option>
+                <option value="Two bedroom for 500$">
+                    Two bedroom for 500$.
+                </option>
+                <option value="Three bedroom for 700$">
+                    Three bedroom for 700$
+                </option>
+            </datalist>
+            <br>
+            <br>
+            <br>
+            <p class="para">
+                Facilities gonna be used.
+            </p>
+            <input id="swimming pool" name="Swimming pool" type="checkbox">
+            <label for="swimming pool">
+                Swimming pool
+            </label>
+            <br>
+            <input id="Restaurant" type="checkbox" name="Restaurant">
+            <label for="Restaurant">
+                Restaurant 
+            </label>
+            <br>
+            <input id="Gardens" name="Gardens" type="checkbox">
+            <label for="Gardens">
+                Gardens 
+            </label>
+            <br>
+            <br>
+            <label for="submit">
+
+            </label>
+            <input id="submit" name="submit" type="submit">
+            <br>
+
+        </form>
+
+
+          
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwkKgFFie7KTto-1ywoPGQDzgBRpNoRUIJSI0Uhz0JKEZPN-FuqBITGusMOXVNXcC3S/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </div>
+    <div>
+        <p class="thanks">
+            Thank you so much for choosing Ekisa towers.
+        </p>
+        <hr>
+        <marquee direction="left" behaviour="slide" scrollamount="9">
+            <img src="Another one.jpg">
+            <img src="Picos.jpg">
+            <img src="My drawing.jpg">
+            <img src="EKy.jpg">
+        </marquee>
+    </div>
+    <br>
+    <div>
+        <nav>
+            <a href="#logo">
+                If you want to read this page again, tap here.
+            </a>
+            <br>
+            <br>
+            <a href="#services">
+                The services we offer, tap here.
+            </a>
+            <br>
+            <br>
+            <a href="#Reservations">
+                For reservations, tap here.
+            </a>
+            <br>
+            <br>
+            <a href="https://www.google.com/search?q=hover+attribute+css&oq=&aqs=chrome.5.35i39i362l8...8.92379648j0j15&sourceid=chrome&ie=UTF-8" target="blank">
+                if you want to know more about the webpage, tap here.. 
+            </a>
+        </nav>
+    </div>
+    <script src="/script.js/">
+    </script>"
+    <button class="Babu" src="https://www.google.com/search?q=hover+attribute+css&oq=&aqs=chrome.5.35i39i362l8...8.92379648j0j15&sourceid=chrome&ie=UTF-8" target="blank">
+        Hamebeats is a genius.
+    </button>
+    <p id="java">
+
+    </p>
+    
+    </body> 
+</html>
